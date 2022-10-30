@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menu_mobile").addEventListener("click", function() {
+                if (document.querySelector(".menu-bar nav ul").style.display == 'flex') {
+                    document.querySelector(".menu-bar nav ul").style.display = 'none'
+                }else {
+                    document.querySelector(".menu-bar nav ul").style.display = 'flex'
+                }
+            })
+        }
+    </script>
     <title>MediCenter</title>
 </head>
 <body>
@@ -15,6 +26,11 @@
                 <a href="#" rel="self"><img src="/logo/logo.png" alt="MediCenter Logo"></a>
             </div>
             <div class="menu-bar">
+                <div class="menu_mobile">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>
                 <nav>
                     <ul>
                         <li class="active"><a href="#">Início</a></li>
@@ -29,7 +45,7 @@
     </header>
     <!-- Fim Cabeçalho -->
 
-    <!-- Início sessão-->
+    <!-- Início sessão banner -->
     <section id="banner">
         <div class="container column">
             <div class="banner_headline">
@@ -68,9 +84,174 @@
         </div>
     </section>
     <!-- Fim sessão banner -->
-    <section>
-        
+
+    <!-- Início sessão conteúdo -->
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Latest News</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="/image/dr.jpg" alt="doctor examming pacient">
+                            </div>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit amat velum
+                            </div>
+                            <div class="news_resume">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus consectetur corporis nulla aliquam fuga. Culpa accusamus rem quis quaerat porro qui nisi ex molestias magnam, placeat hic! Totam, nesciunt.
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="/image/dr.jpg" alt="doctor examming pacient">
+                            </div>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit amat velum
+                            </div>
+                            <div class="news_resume">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus consectetur corporis nulla aliquam fuga. Culpa accusamus rem quis quaerat porro qui nisi ex molestias magnam, placeat hic! Totam, nesciunt.
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="/image/dr.jpg" alt="doctor examming pacient">
+                            </div>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit amat velum
+                            </div>
+                            <div class="news_resume">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus consectetur corporis nulla aliquam fuga. Culpa accusamus rem quis quaerat porro qui nisi ex molestias magnam, placeat hic! Totam, nesciunt.
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="/image/dr.jpg" alt="doctor examming pacient">
+                            </div>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit amat velum
+                            </div>
+                            <div class="news_resume">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur natus consectetur corporis nulla aliquam fuga. Culpa accusamus rem quis quaerat porro qui nisi ex molestias magnam, placeat hic! Totam, nesciunt.
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Departments</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="blocos_aside">
+                            <div class="blocos"></div>
+                            <div class="blocos"></div>
+                            <div class="blocos"></div>
+                            <div class="blocos"></div>
+                            <div class="blocos"></div>
+                            <div class="blocos"></div>
+                        </div>                     
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Make An Appointment</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="widget_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vitae, ipsa aut modi, molestiae asperiores reprehenderit ab, corporis magni facere dignissimos veritatis dolorum illum?</div>
+                    </div>
+                    <div class="widget_address">
+                        <address>
+                            <div class="">By phone <strong>1-800-643-4300</strong></div>
+                            <div class="">By email: <a href="#">medicenter@mail.com</a></div>
+                            <div class="">Or <a href="#">fill in the form</a> on our contact page</div>
+                        </address>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </section>
-    <!-- Fim sessão -->
+    <!-- Fim sessão conteúdo -->
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm1">
+                    ....
+                </div>
+                <div class="fm2">
+                    ....
+                </div>
+                <div class="fm3">
+                    ....
+                </div>
+            </div>
+
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title_footer">
+                            <div class="widget_title_text_footer">Medicenter Clinic</div>
+                            <div class="widget_title_bar_footer"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text_footer">Latest Posts</div>
+                            <div class="widget_title_bar_footer"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div> 
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title_footer">
+                            <div class="widget_title_text_footer">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy">
+                &copy; Copyright - <a href="#">MediCenter Template</a> by <a href="#">QuanticaLabs</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
